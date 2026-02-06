@@ -13,19 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="@string/connexion"/>
+        android:text="@string/titleDetail"/>
 
-    <EditText
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:inputType="text"
-        android:hint="@string/votre_nom"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/connexionBtn"/>
+        android:text="@string/ok"/>
     <!--android:onClick="onButtonClick"-->
 
-
+    <TextView
+        android:id="@+id/textviewNom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:text="@string/nom"/>
 </LinearLayout>
