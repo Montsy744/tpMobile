@@ -6,14 +6,16 @@ public class XMen {
     // variables représentant les informations
     private String nom;
     private String alias;
+    private String confrerie;
     private String description;
     private String pouvoir;
 
     private @DrawableRes int idImage;
 
-    public XMen(String nom, String alias, String description, String pouvoir, int idImage) {
+    public XMen(String nom, String alias, String confrerie, String description, String pouvoir, int idImage) {
         this.nom = nom;
         this.alias = alias;
+        this.confrerie = confrerie;
         this.description = description;
         this.pouvoir = pouvoir;
         this.idImage = idImage;
@@ -35,6 +37,14 @@ public class XMen {
 
     public String getNom() {
         return nom;
+    }
+
+    public String getConfrerie() {
+        return confrerie;
+    }
+
+    public void setConfrerie(String confrerie) {
+        this.confrerie = confrerie;
     }
 
     public void setNom(String nom) {
