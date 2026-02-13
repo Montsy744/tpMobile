@@ -7,6 +7,9 @@ android {
     compileSdk {
         version = release(36)
     }
+    buildFeatures {
+        viewBinding = true // génération des ViewBindings
+    }
 
     defaultConfig {
         applicationId = "fr.iutlille.tp3"
@@ -35,9 +38,8 @@ android {
 
 dependencies {
     implementation(libs.appcompat)
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
